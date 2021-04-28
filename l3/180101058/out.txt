@@ -1,0 +1,97 @@
+Line          Token          Token Type          Token Specifier          Pointer
+1             PROGRAM        1                   
+1             STATS          22                  ^STATS                   0x55758910f520
+2             VAR            2                   
+3             SUM            22                  ^SUM                     0x55758910f560
+3             ,              14                  
+3             SUMSQ          22                  ^SUMSQ                   0x55758910f5a0
+3             ,              14                  
+3             I              22                  ^I                       0x55758910f5e0
+3             ,              14                  
+3             VALUE          22                  ^VALUE                   0x55758910f620
+3             ,              14                  
+3             MEAN           22                  ^MEAN                    0x55758910f660
+3             ,              14                  
+3             VARIANCE       22                  ^VARIANCE                0x55758910f6a0
+3             :              13                  
+3             INTEGER        6                   
+4             BEGIN          3                   
+5             SUM            22                  ^SUM                     0x55758910f560
+5             :=             15                  
+5             0              23                  #0                       0x55758910f6e0
+5             ;              12                  
+6             SUMSQ          22                  ^SUMSQ                   0x55758910f5a0
+6             :=             15                  
+6             0              23                  #0                       0x55758910f6e0
+6             ;              12                  
+7             FOR            7                   
+7             I              22                  ^I                       0x55758910f5e0
+7             :=             15                  
+7             1              23                  #1                       0x55758910f720
+7             TO             10                  
+7             100            23                  #100                     0x55758910f760
+7             DO             11                  
+8             BEGIN          3                   
+9             READ           8                   
+9             (              20                  
+9             VALUE          22                  ^VALUE                   0x55758910f620
+9             )              21                  
+9             ;              12                  
+10            SUM            22                  ^SUM                     0x55758910f560
+10            :=             15                  
+10            SUM            22                  ^SUM                     0x55758910f560
+10            +              16                  
+10            VALUE          22                  ^VALUE                   0x55758910f620
+10            ;              12                  
+11            SUMSQ          22                  ^SUMSQ                   0x55758910f5a0
+11            :=             15                  
+11            SUMSQ          22                  ^SUMSQ                   0x55758910f5a0
+11            +              16                  
+11            VALUE          22                  ^VALUE                   0x55758910f620
+11            *              18                  
+11            VALUE          22                  ^VALUE                   0x55758910f620
+12            END            4                   
+12            ;              12                  
+14            MEAN           22                  ^MEAN                    0x55758910f660
+14            :=             15                  
+14            SUM            22                  ^SUM                     0x55758910f560
+14            DIV            19                  
+14            100            23                  #100                     0x55758910f760
+14            ;              12                  
+15            VARIANCE       22                  ^VARIANCE                0x55758910f6a0
+15            :=             15                  
+15            SUMSQ          22                  ^SUMSQ                   0x55758910f5a0
+15            DIV            19                  
+15            100            23                  #100                     0x55758910f760
+15            -              17                  
+15            MEAN           22                  ^MEAN                    0x55758910f660
+15            *              18                  
+15            MEAN           22                  ^MEAN                    0x55758910f660
+15            ;              12                  
+16            WRITE          9                   
+16            (              20                  
+16            MEAN           22                  ^MEAN                    0x55758910f660
+16            ,              14                  
+16            VARIANCE       22                  ^VARIANCE                0x55758910f6a0
+16            )              21                  
+17            END.           5                   
+
+
+
+SYMBOL TABLE:
+
+Indetifiers - 
+Token name              Pointer 
+VALUE                   0x55758910f620
+VARIANCE                0x55758910f6a0
+SUM                     0x55758910f560
+SUMSQ                   0x55758910f5a0
+I                       0x55758910f5e0
+MEAN                    0x55758910f660
+STATS                   0x55758910f520
+
+Integer constants - 
+Integer value           Pointer 
+100                     0x55758910f760
+0                       0x55758910f6e0
+1                       0x55758910f720

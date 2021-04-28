@@ -1,0 +1,20 @@
+PROGRAM STATS
+VAR
+    SUM,SUMSQ,VALUE,MEAN,VARIANCE,FOO : INTEGER;
+    I,X,FOO,SIZE,SDEV : REAL
+BEGIN
+    SUM := 0
+    SUMSQ := 0.1;
+    FOR I := 1 TO 100 DO
+        BEGIN
+            READ VALUE, SIZE);
+            READ (SDEV, TEMP);
+            SUM := SUM + 1;
+            SUMSQ := SUMSQ + VALUE * VALUE
+        END;
+    MEAN := SUM DIV 100.0;
+    MEAN ~ SUM DIV 100;
+    VARIANCE := SUMSQ DIV 100 - MEAN * MEAN;
+    X := 1.0 * 5.0;
+    WRITE(MEAN VARIANCE)
+END.
